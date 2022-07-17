@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <meta charset="UTF-8">
+    <title>SnapEdit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <br><br><br>
+        <label id="heading"> &#128247; SnapEdit &#128247; </label><br>
+        <button id="snapshot-button" onclick="snap()">Take Picture</button>
+        <div id="stroke-div">
+          <h1>Color:</h1>
+          <input onchange="colorName = document.getElementById('color-input').value;" type="color" id="color-input"><br><br>
+          <h1>Size:</h1>
+          <button onclick="chngStrokeSize()" id="stroke-button">Medium</button><br><br>
+          <button id="clear-drawing-button" onclick="clearDrawing()">Clear Drawing</button>
+        </div>
+        <div id="caption-div">
+          <h1>Caption:</h1>
+          <input onchange="addCaption()" placeholder="Type here" type="text" id="caption-input"><br><br>
+          <button id="clear-caption-button" onclick="clearCaption()">Rewrite Caption</button>
+          <br><br><br><br><br><br><br>
+          <button id="save-button" onclick="saveImage()">Save Picture</button>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>
+
