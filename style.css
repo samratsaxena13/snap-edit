@@ -1,0 +1,249 @@
+body {
+    font-family: 'Poppins';
+    background-color: #5E6572;
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+}
+
+canvas {
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+#heading {
+    border: 2px black solid;
+    font-size: 40px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    animation-name: glow-heading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-bottom: 400px;
+}
+
+#snapshot-button {
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*----------------------------------------Big Screen UI----------------------------------------*/
+
+#stroke-div {
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    visibility: hidden;
+    visibility: hidden;
+}
+
+#color-input {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+}
+
+#stroke-button {
+    width: 200px;
+    border: 2px black solid;
+    border-radius: 20px;
+    color: black;
+    font-size: 40px;
+}
+
+#clear-drawing-button {
+    font-size: 20px;
+    background-color: #308345;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#clear-drawing-button:hover {
+    animation-name: glow-green;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#caption-div {
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 1000px;
+    visibility: hidden;
+    visibility: hidden;
+}
+
+#caption-input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px black solid;
+    border-radius: 20px;
+    color: black;
+}
+
+#add-caption-button {
+    font-size: 20px;
+    background-color: #b18732;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#add-caption-button:hover {
+    animation-name: glow-yellow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#save-button {
+    font-size: 20px;
+    background-color: #108183;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#save-button:hover {
+    animation-name: glow-blue;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+/*----------------------------------------Small Screen UI----------------------------------------*/
+
+#btn-small {
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#stroke-div-small {
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 25px;
+    visibility: hidden;
+}
+
+#ci-small {
+    width: 70px;
+    height: 70px;
+    border-radius: 5%;
+}
+
+#sb-small {
+    width: 50px;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+}
+
+#thickness-hr {
+    border: 5px black solid;
+}
+
+#cdb-small {
+    font-size: 20px;
+    background-color: #308345;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#cdb-small:active {
+    animation-name: gg-small;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+#caption-div-small {
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 355px;
+    visibility: hidden;
+}
+
+#cai-small {
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px black solid;
+    border-radius: 20px;
+    color: black;
+}
+
+#acb-small {
+    font-size: 14px;
+    background-color: #b18732;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#acb-small:active {
+    animation-name: gy-small;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+#svb-small {
+    font-size: 20px;
+    background-color: #108183;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#svb-small:active {
+    animation-name: gb-small;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+/*----------------------------------------Animations----------------------------------------*/
+
+@keyframes glow-heading {
+    0% {background-color: white;}
+    50% {background-color: gold;}
+    100% {background-color: white;}
+}
+
+@keyframes glow-green {
+    0% {background-color: #308345; color: white;}
+    50% {background-color: white; color: #308345;}
+    100% {background-color: #308345; color: white;}
+}
+
+@keyframes gg-small {
+    0% {background-color: #308345;}
+    50% {background-color: white;}
+    100% {background-color: #308345;}
+}
+
+@keyframes glow-yellow {
+    0% {background-color: #b18732; color: white;}
+    50% {background-color: white; color: #b18732;}
+    100% {background-color: #b18732; color: white;}
+}
+
+@keyframes gy-small {
+    0% {background-color: #b18732;}
+    50% {background-color: white;}
+    100% {background-color: #b18732;}
+}
+
+@keyframes glow-blue {
+    0% {background-color: #108183; color: white;}
+    50% {background-color: white; color: #108183;}
+    100% {background-color: #108183; color: white;}
+}
+
+@keyframes gb-small {
+    0% {background-color: #108183;}
+    50% {background-color: white;}
+    100% {background-color: #108183;}
+}
